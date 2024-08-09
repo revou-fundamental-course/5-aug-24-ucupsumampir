@@ -1,1 +1,62 @@
 /* ini css */
+
+main {
+    display: flex;
+}
+
+.title {
+    margin: auto;
+    color: rgb(65, 65, 65);
+    background-color:rgb(254, 192, 192);
+    text-align: center;
+}
+
+form {
+    padding: 12px;
+    background-color: rgb(212, 255, 241);
+}
+
+aside {
+    padding: 48px;
+}
+
+button {
+    height: 25px;
+    background-color: rgb(250, 255, 174);
+    border: 0.5px solid;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+.input-beratbadan {
+    font-family: cursive;
+    width: 10%;
+    padding: 8px 8px;
+    margin: 8px 2px;
+    display: inline-block;
+    border: 1px solid #000000;
+    border-radius: 2px;
+    box-sizing: border-box;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+.bg-kuningmuda {
+    background-color: rgb(250, 255, 174);
+}
+
+.bg-merahmuda {
+    background-color: rgb(210, 210, 210); 
+}
+
+.end {
+    margin: auto;
+    color: rgb(65, 65, 65);
+    background-color:rgb(254, 192, 192);
+    text-align: center;
+}
