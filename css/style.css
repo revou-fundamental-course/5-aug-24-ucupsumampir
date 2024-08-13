@@ -1,11 +1,22 @@
 /* ini css */
 
+h3 {
+    text-indent: 5px;
+    line-height: 1px;
+}
+
+input {
+    line-height: 10px;
+}
+
 main {
     display: flex;
 }
 
 .title {
-    margin: auto;
+    
+    padding: 1px;
+    margin: 1px;
     color: rgb(65, 65, 65);
     background-color:rgb(254, 192, 192);
     text-align: center;
@@ -33,10 +44,8 @@ button {
 
 .input-beratbadan {
     font-family: cursive;
-    width: 11%;
-    padding: 7px;
-    margin: 7px;
-    display:flex;
+    width: 6%;
+    padding: 5px;
     border: 1px solid #000000;
     border-radius: 2px;
     -webkit-border-radius: 2px;

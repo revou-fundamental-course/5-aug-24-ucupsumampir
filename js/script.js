@@ -1,1 +1,5 @@
 // ini javascript
+
+function script() {
+    
+}
