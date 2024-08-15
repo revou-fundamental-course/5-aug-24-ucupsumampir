@@ -5,21 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css\style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Moderustic:wght@300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
     <title>BMI Calculator</title>
 </head>
 
 <body>
-    <header>
+    <header class="bungee-tint-regular">
         <h1 class="title">Website Kalkulator BMI</h1>
     </header>
 
-    <main>
-        <aside>
+    <main class="montserrat-uniquifier" id="bmiForm">
+        <aside class="aside-1">
             <article>
-                <p>
+                <p style="margin-top: 1px;">
                     Body Mass Index (BMI) merupakan salah satu cara dalam menentukan
                     status gizi seseorang khususnya yang berkaitan dengan kurang dan kelebihan
-                    dari berat badan (BB). 
+                    dari berat badan (BB).<br><br>
                     World Health Organization
                     (WHO) merekomendasikan BMI dalam mengklasifikasikan antara berat
                     badan kurang, normal, dan berat badan berlebih yaitu dengan cara membagi
@@ -32,36 +37,34 @@
 
             <form>
                 <div>
-                    <h3 style="text-indent: 5px; ">Jenis Kelamin</h3>
-                    <input type="radio" id="laki-laki" name="jenis-kelamin" value="laki-laki">
+                    <h3>Jenis Kelamin</h3>
+                    <input type="radio" name="jenis-kelamin" value="laki-laki">
                     <label for="laki-laki">Laki-laki</label>
 
-                    <input type="radio" id="perempuan" name="jenis-kelamin" value="perempuan">
+                    <input type="radio" name="jenis-kelamin" value="perempuan">
                     <label for="perempuan">Perempuan</label>
-                </div>
-<br>
-                <div>
-                    <h3>Usia</h3>
-                    <input type="number" class="inputan-style" id="input-usia" >
-                    <Br>
-                    <br>
                 </div>
 
                 <div>
+                    <br>
                     <h3>Tinggi Badan</h3>
-                    <input type="number" class="inputan-style" id="input-tinggi" required>
+                    <input type="number" class="inputan-style" id="Height" required>
                     <Br>
                     <br>
                 </div>
 
                 <div>
                     <h3>Berat Badan</h3>
-                    <input type="number" class="inputan-style" id="input-berat" required>
+                    <input type="number" class="inputan-style" id="Weight" required>
                 </div>
 
                 <div>
-                    <button class="bg-kuningmuda" type="submit" onclick="formValidate()">Hitung BMI</button>
-                    <button class="bg-merahmuda">Reset BMI</button>
+                    <button class="bg-kuningmuda" type="submit" onclick="main()">Hitung BMI</button>
+                    <button class="bg-merahmuda"  type="submit" id="resetButton">Reset BMI</button>
+                </div>
+
+                <div class="result">
+                    <p id="output" class="output" style="font-weight: 700;">Result :</p>
                 </div>
             </form>
 
@@ -78,23 +81,15 @@
         </aside>
 
         <aside>
-            <section>
-                <p>
-                    Tampilan hasilTampilan hasilTampilan hasilTampilan hasilTampilan hasilTampilan hasilTampilan
-                    hasilTampilan hasilTampilan hasilTampilan hasilTampilan hasilTampilan hasilTampilan hasilTampilan
-                    hasilTampilan hasilTampilan hasilTampilan hasilTampilan hasilTampilan hasilTampilan hasilTampilan
-                    hasilTampilan hasilTampilan hasilTampilan hasilTampilan hasilTampilan hasilTampilan hasilTampilan
-                    hasil
-                </p>
-            </section>
+
         </aside>
     </main>
 
-    <footer>
+    <footer class="montserrat-uniquifier">
         <h2 class="end">®&nbsp;made by: yusufahmadghiffari&nbsp;®</h2>
     </footer>
 
-    <script src="js\script.js"></script>
+    <script src="js\script.js" defer></script>
 </body>
 
 </html>
